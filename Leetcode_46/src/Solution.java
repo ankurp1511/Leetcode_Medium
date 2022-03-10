@@ -15,6 +15,7 @@ public class Solution {
 
         if (list.size() == nums.length) {
             result.add(new ArrayList<>(list));
+            return;
         }
 
         for (int i = 0; i< nums.length; i++) {
