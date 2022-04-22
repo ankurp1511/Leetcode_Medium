@@ -1,10 +1,7 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Solution {
-
-
 
     static class TreeNode {
         int val;
@@ -18,9 +15,7 @@ public class Solution {
         }
     }
 
-
     public static void main(String[] args) {
-
 
         TreeNode root = new TreeNode(5);
         TreeNode node1 = new TreeNode(4);
@@ -45,6 +40,7 @@ public class Solution {
         List<List<Integer>> resultList = new ArrayList<>();
 
         rootToLeafPaths(root, 22, resultList, new ArrayList<>(), 0);
+        System.out.println(resultList);
     }
 
     private static void rootToLeafPaths(TreeNode root, int targetSum, List<List<Integer>> resultList,
